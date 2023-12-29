@@ -13,3 +13,60 @@
   --clr-grayish-blue-600: hsl(213, 9%, 39%);
   --clr-grayish-blue-700: hsl(212, 27%, 19%);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  /* font-family: "Fraunces", serif; */
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-heading);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
