@@ -26,8 +26,8 @@ html {
 }
 
 body {
-  font-family: "Barlow", sans-serif;
-  /* font-family: "Fraunces", serif; */
+  /* font-family: "Barlow", sans-serif; */
+  font-family: "Fraunces", serif;
   font-size: 1.8rem;
   line-height: 1.5;
 }
@@ -101,4 +101,25 @@ a {
 .list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
+}
+
+/* buttons */
+.btn {
+  cursor: pointer;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn--white {
+  background-color: var(--clr-white);
+  color: var(--clr-dark-blue);
+}
+
+.btn--white:hover {
+  color: var(--clr-white);
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
