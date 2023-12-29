@@ -70,3 +70,24 @@ p {
   }
 }
 
+/* links */
+a {
+  text-decoration: none;
+}
+
+.underline {
+  display: inline-block;
+  line-height: 0.5;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  border-width: 0 0 10px;
+  border-style: solid;
+}
+
+.underline--yellow {
+  border-color: hsla(51, 100%, 49%, 0.3);
+}
+
+.underline--red {
+  border-color: hsla(7, 99%, 70%, 0.3);
+}
