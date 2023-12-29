@@ -76,12 +76,12 @@ a {
 }
 
 .underline {
+  border-style: solid;
+  border-width: 0 0 10px;
   display: inline-block;
   line-height: 0.5;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  border-width: 0 0 10px;
-  border-style: solid;
 }
 
 .underline--yellow {
@@ -90,4 +90,15 @@ a {
 
 .underline--red {
   border-color: hsla(7, 99%, 70%, 0.3);
+}
+
+/* list */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
 }
