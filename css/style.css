@@ -1,0 +1,15 @@
+:root {
+  /* primary */
+  --clr-soft-red: hsl(7, 99%, 70%);
+  --clr-yellow: hsl(51, 100%, 49%);
+  --clr-dark-cyan: hsl(167, 40%, 24%);
+  --clr-dark-blue: hsl(198, 62%, 26%);
+  --clr-footer-text: hsl(168, 34%, 41%);
+
+  /* neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grayish-blue-400: hsl(210, 4%, 67%);
+  --clr-grayish-blue-500: hsl(232, 10%, 55%);
+  --clr-grayish-blue-600: hsl(213, 9%, 39%);
+  --clr-grayish-blue-700: hsl(212, 27%, 19%);
+}
