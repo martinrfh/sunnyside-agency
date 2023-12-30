@@ -157,3 +157,39 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* testimonials */
+.testimonial__image {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial__image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote__text {
+  color: var(--clr-grayish-blue-500);
+  margin: 3rem 0;
+}
+
+.quote__author {
+  color: var(--clr-grayish-blue-700);
+}
+
+.quote__organization {
+  color: var(--clr-grayish-blue-400);
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quote__text {
+    margin: 6rem 0;
+  }
+}
