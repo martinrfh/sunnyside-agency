@@ -82,14 +82,23 @@ a {
   line-height: 0.5;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
+  transition: all 0.15s;
 }
 
 .underline--yellow {
   border-color: hsla(51, 100%, 49%, 0.3);
 }
 
+.underline--yellow:hover {
+  border-color: var(--clr-yellow);
+}
+
 .underline--red {
   border-color: hsla(7, 99%, 70%, 0.3);
+}
+
+.underline--red:hover {
+  border-color: var(--clr-soft-red);
 }
 
 /* list */
@@ -122,4 +131,29 @@ a {
 .btn--white:hover {
   color: var(--clr-white);
   background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+.grid--cols-2x2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2x3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid--cols-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--cols-4x1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
