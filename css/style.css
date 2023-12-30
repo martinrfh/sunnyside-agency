@@ -41,7 +41,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -58,7 +58,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 8rem;
+    font-size: 9rem;
   }
 
   h2 {
@@ -102,6 +102,10 @@ a {
 }
 
 /* list */
+ul {
+  margin: 0;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -305,5 +309,45 @@ a {
   .nav__item .btn {
     background-color: white;
     color: var(--clr-grayish-blue-700);
+  }
+
+  .nav__item .btn:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-grayish-blue-500);
+  }
+
+  .nav__link {
+    color: var(--clr-white);
+  }
+}
+
+/* hero */
+.hero__bg-image {
+  background-image: url(/images/mobile/image-header.jpg);
+  height: 100svh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__content {
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.hero__title {
+  margin: 0;
+  padding-bottom: 6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__bg-image {
+    background-image: url(/images/desktop/image-header.jpg);
+  }
+
+  .hero__title {
+    padding-top: 6rem;
   }
 }
