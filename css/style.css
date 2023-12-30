@@ -114,12 +114,14 @@ a {
 
 /* buttons */
 .btn {
-  cursor: pointer;
-  padding: 1.5rem 2.5rem;
-  border: none;
-  outline: none;
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
   font-weight: bold;
+  outline: none;
+  padding: 1.3rem 2.5rem;
   transition: all 0.3s;
 }
 
@@ -131,6 +133,11 @@ a {
 .btn--white:hover {
   color: var(--clr-white);
   background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.btn--yellow {
+  background-color: var(--clr-yellow);
+  color: var(--clr-grayish-blue-700);
 }
 
 /* grid */
@@ -222,5 +229,81 @@ a {
 
   .block__title {
     margin-bottom: 4rem;
+  }
+}
+
+/* collapsible */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 3rem 0;
+}
+
+.nav__list {
+  background-color: var(--clr-white);
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.nav__item {
+  padding: 1.3rem 2rem;
+}
+
+.nav__link {
+  color: var(--clr-grayish-blue-400);
+  transition: all 0.3s;
+}
+
+.nav__link.btn {
+  background-color: white;
+  color: var(--clr-dark-blue);
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding-top: 1rem;
+  }
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .nav__item .btn {
+    background-color: white;
+    color: var(--clr-grayish-blue-700);
   }
 }
