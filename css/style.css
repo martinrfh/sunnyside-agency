@@ -428,3 +428,9 @@ ul {
     margin: 10rem 0;
   }
 }
+
+/*block image-gallery */
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+}
