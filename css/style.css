@@ -167,6 +167,7 @@ ul {
 
   .grid--cols-4x1 {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 }
 
@@ -344,6 +345,19 @@ ul {
   text-transform: uppercase;
 }
 
+.arrow-down {
+  animation: scroll-down 1s ease-in infinite alternate;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__bg-image {
     background-image: url(/images/desktop/image-header.jpg);
@@ -397,18 +411,22 @@ ul {
   .about-us .block {
     align-self: center;
     justify-self: center;
-    padding: 15rem;
+    width: 70%;
   }
 
   .image-container .image__content {
-    padding: 0 15rem;
+    width: 100%;
+  }
+
+  .image__content p {
+    padding: 0 8rem;
   }
 }
 
 /*block testimonials*/
 .testimonials-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
 .testimonials__header {
@@ -417,7 +435,7 @@ ul {
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
-  margin: 5rem 0;
+  margin-bottom: 8rem;
 }
 
 .testimonials {
@@ -425,8 +443,8 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
-  .testimonials__header {
-    margin: 10rem 0;
+  .testimonials {
+    gap: 1.5rem;
   }
 }
 
@@ -440,7 +458,7 @@ ul {
 .footer {
   background-color: hsla(168, 34%, 41%, 0.5);
   color: var(--clr-footer-text);
-  padding: 4rem;
+  padding: 5rem;
   text-align: center;
 }
 
